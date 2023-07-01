@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   
+    
+    <title>www.clickcraft.com</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+h1,
+p {
+    color: black;
+}
+
+
+.tg1,
+.tg2 {
+    text-align: center;
+    font-weight: bold;
+    color: #006;
+}
+
+.cards {
+    color: rgba(73, 85, 245, 1);
+}
+
+.l {
+    background-color: rgba(246, 249, 255, 1);
+    margin-right: -20px;
+    margin-top: 10px;
+}
+
+.cards2 {
+    color: rgba(12, 41, 111, 1);
+}
+
+.navbar navbar-expand {
+    float: right;
+    padding: 120px;
+}
+
+
+.navlogo {
+    height: 33px;
+    widows: 30px;
+}
+
+.col-md-4 .img-fluid {
+    height: 200px;
+    width: 200px;
+}
+
+.tag1 {
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(12, 7, 26);
+}
+
+.tg2 {
+    color: rgba(221, 144, 0, 0.79);
+}
+
+.reserved-bot {
+    background-color: rgb(25, 25, 66);
+    text-align: justify;
+    height: 90px;
+    padding-top: 40px;
+    width: 100%;
+    color: aliceblue;
+}
+
+/* .. */
+
+
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fef8f8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+}
+
+.card {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: calc(var(--curve) * 1px);
+    background-color: var(--surface-color);
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+    transform: translateY(0);
+}
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.card__arc path {
+    fill: var(--surface-color);
+    d:path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+    transform: translateY(0);
+}
+
+.card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+}
+
+.card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";
+    font-size: .8em;
+    color: #D7BDCA;
+}
+
+.card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+}
+
+.card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a style="font-weight: bold;" class="navbar-brand" href="#"> <span style="color: white;">CLICK-</span><span style="color: red;">CRAFT</span> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="catalog.html">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="service.html">Service</a>
+              </li>
+            
+            </ul>
+            
+                <a href="login.html"><button style="width: 100px;" class="btn btn-outline-success" type="submit">LOGIN</button></a>
+                <pre>    </pre>
+                <a href="signup.html"><button style="width: 100px;" class="btn btn-outline-success" type="submit">SIGNUP</button></a>
+                <pre>    </pre>
+                <a href="dashboard.html"><button style="width: 130px;" class="btn btn-outline-success" type="submit">DASHBOARD</button></a>
+                <pre>  </pre>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="height: 570px;" src="https://wallpapercave.com/wp/wp10464458.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Amazing Collection Of Pottery Handicrafts</h5>
+              <p>Pottery Handicrafts In Pakistan.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="height: 570px;" src="https://wallpapercave.com/wp/wp10464504.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Amazing Collection Of Home Decor Handicrafts</h5>
+              <p>Home Decor Handicrafts In Pakistan.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="height: 570px;" src="https://wallpapercave.com/wp/wp10464471.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Amazing Collection Of Decorative Handicrafts</h5>
+              <p>Decorative Handicrafts Items In Pakistan.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br><br>
+      <center><h2 style="color: rgba(221, 144, 0, 0.79); font-weight: bold;">SPECIALITY OF PAKISTAN</h2></center>
+      <center><h1 style="color: rgba(221, 144, 0, 0.79); font-weight:bold;">NEW TYPES OF HANDICRAFTS</h1></center>
+      <br><br>
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-7">
+                <h2 style="padding-bottom:30px; padding-top:100px; font-weight: bold;">HANDICRAFTS IN PAKISTAN</h2>
+                <p>Handicrafts of Pakistan are precious stones in the bejeweled crown of Pakistani culture and heritage. Be it intricately decorated metal craft or some marvelous marble inlay work or some exquisite paintings, Pakistani handicrafts are going places with their ethnic designs and flourishing textures Craftsmanship in Pakistan comes has sprung out of artisans who weave myths, legends, and Sufi stories into different forms of crafts indigenous to every area.
+
+                </p>
+
+
+            </div>
+            <div class="col-md-5">
+                <img src="https://images.pexels.com/photos/2766334/pexels-photo-2766334.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="...">
+
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+    <div class="container">
+      <div class="row">
+
+          <div class="col-md-5">
+              <img src="https://images.pexels.com/photos/186846/pexels-photo-186846.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="...">
+
+          </div>
+
+          <div class="col-md-7">
+              <h2 style="padding-bottom:30px; padding-top:100px; font-weight: bold;">DIFFERENT TYPES OF HANDICRAFTS</h2>
+              <p>
+                Different types of Handicrafts can all be divided into five basic types based on their form and purpose: textile, decorative, paper, functional, and fashion Textiles Appliqué, Crocheting, Embroidery, Felt-making, Knitting, Lace-making, Macramé, Quilting, Tapestry art, Weaving Woodcraft Wood-carving Handicrafts are products that are made and embellished with skilled hands without any help from machines or tools.
+
+                  
+              </p>
+
+          </div>
+      </div>
+  </div>
+ <br><br>
+ <ul class="cards">
+  <li>
+      <a href="" class="card">
+          <img src="https://c4.wallpaperflare.com/wallpaper/465/666/514/photography-depth-of-field-handicraft-wallpaper-preview.jpg" class="card__image" alt="" />
+          <div class="card__overlay">
+              <div class="card__header">
+                  <svg class="card__arc" xmlns="images/w1.webp">
+                      <path />
+                  </svg>
+                  <img class="card__thumb" src="https://cdn.dribbble.com/users/369522/screenshots/3437328/media/4c617db806f1f50e780cddd54dc48443.png?compress=1&resize=400x300&vertical=top" alt="" />
+                  <div class="card__header-text">
+                      <h3 class="card__title">LAMP HANDICRAFTS</h3>
+                      <span class="card__status">1 hour ago</span>
+                  </div>
+              </div>
+              <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, libero? Dolorum eligendi, molestias magnam voluptate praesentium dignissimos soluta iusto ipsum voluptas reiciendis, nulla asperiores itaque, sit ratione quisquam doloremque velit!</p>
+          </div>
+      </a>
+  </li>
+  <li>
+      <a href="" class="card">
+          <img src="https://images.unsplash.com/photo-1626319338034-eef070696401?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aGFuZGljcmFmdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card__image" alt="" />
+          <div class="card__overlay">
+              <div class="card__header">
+                  <svg class="card__arc" xmlns="images/w2.webp">
+                      <path />
+                  </svg>
+                  <img class="card__thumb" src="https://cdn.dribbble.com/users/369522/screenshots/3437328/media/4c617db806f1f50e780cddd54dc48443.png?compress=1&resize=400x300&vertical=top" alt="" />
+                  <div class="card__header-text">
+                      <h3 class="card__title">DECORATED LEAF</h3>
+
+                  </div>
+              </div>
+              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur optio blanditiis beatae natus modi. Non rerum molestiae odit nam culpa iusto nisi quisquam natus temporibus, molestias dignissimos corrupti vitae similique!</p>
+          </div>
+      </a>
+  </li>
+  <li>
+      <a href="" class="card">
+          <img src="https://images.pexels.com/photos/186846/pexels-photo-186846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card__image" alt="" />
+          <div class="card__overlay">
+              <div class="card__header">
+                  <svg class="card__arc" xmlns="images/w3.webp">
+                      <path />
+                  </svg>
+                  <img class="card__thumb" src="https://cdn.dribbble.com/users/369522/screenshots/3437328/media/4c617db806f1f50e780cddd54dc48443.png?compress=1&resize=400x300&vertical=top" alt="" />
+                  <div class="card__header-text">
+                      <h3 class="card__title">GLASS HANDICRAFTS</h3>
+
+                      <span class="card__status">1 hour ago</span>
+                  </div>
+              </div>
+              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fugit, dolorem corporis culpa consequuntur rerum aperiam maxime autem accusantium ducimus error eaque, ut tempora delectus quo? Eveniet molestiae vel ipsam.</p>
+          </div>
+      </a>
+  </li>
+  
+ </ul>
+<br><br><br>
+    <center><footer style="background-color: black; height: 70px; width: 100%; font-weight: bold; color: white;"><br> @ CLICK-CRAFT powered by ANUS FARRUKH</footer>
+</center>
+</body>
+</html>
